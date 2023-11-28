@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Task 4 Visualization</title>
+</head>
+<body>
+    <button onclick="goBack()">Back</button>
+    <p></p>
+    <div id="dropdown-container">
+        <label for="ageRangeSelect">Select Age Range:</label>
+        <select id="ageRangeSelect">
+            <!-- Options will be populated by JavaScript -->
+        </select>
+    </div>
+    <div id="visTask4"></div>
+
+    <!-- Include Vega libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <!-- Include Task 4 JavaScript -->
+    <script src="task_4.js"></script>
+    <script>
+        function goBack() {
+            window.location.href = 'index.html';
+        }
+    </script>
+
+</body>
+</html>
+
